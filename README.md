@@ -1,24 +1,32 @@
 # Inferencial-Statistics
 
 # 1 You hear about two studies looking at the effect of pollution on the number of birds in The Netherlands. Study1 counted birds in 20 parks, and study 2 counted birds in 100 parks. Which study is more likely to draw a conclusion that is representative of the population?
+
 Study 2
 
 #2 A busy traffic intersection in a city was experiencing an average of 20 accidents per week. The council decided to try to reduce the number of accidents by placing a stop sign at the intersection. In this situation, what is i) the null hypothesis, and ii) the alternative hypothesis?
+
 μ1 −μ2=0;  μ_1 > μ_2
 
 #3 Normally, about 40 people out of every 100 turn up for a local election. You show pictures of politicians with baby animals to a sample of 100 people, and measure their voting turnout. The null hypothesis is that pictures of baby animals do not influence voting turnout. You find a test statistic of 2.179, which corresponds to a two-sided p-value of less than 0.025. What can we say about this?
+
 If the null hypothesis is true, the chance of finding that people’s voting habits are influenced by pictures of baby animals is less than 2.5%
 
 #4 In an experiment on the effects of giving children candy on children’s test scores, you’re not sure which direction the effect will work. The candy may act as a reward that has a positive effect on scores, or it could make the children hyperactive so that they don’t concentrate very well on the tests.
 
 The mean test score without candy was 25. The mean test score with candy was 20. We found that the 95% confidence interval for the group that ate candy ranged from 18.5 - 21.5. Which of the following is the case?
 
-We can accept the null hypothesis, because there is a 95% chance that this would happen if the null hypothesis was true.
+FALSE <- We can accept the null hypothesis, because there is a 95% chance that this would happen if the null hypothesis was true.
+FALSE<- We can accept the null hypothesis because there is a 5% chance that this would happen if the null hypothesis was true.
+
+We can reject the null hypothesis because there is a 5% chance that this would happen if the null hypothesis was true.
 
 #5 If you reject the null hypothesis when the null hypothesis is true, what is this an example of?
+
 Type I error
 
 #6 Which of the following will improve statistical power? (select all that apply)
+
 Increase the level of alpha
 Reduce the variance in the population
 Use more reliable measurement instruments
@@ -47,7 +55,9 @@ x<-0.0160/0.034
 
 You take a sample of 23 art students and 30 economics students, and measure how much they like statistics on a continuous scale. The mean amount that a group of economics students likes statistics is 26, while the mean amount that a group of art students likes statistics is 15. The variance in the economic group is 4.2, while the variance in the art group is 10.3.
 
-Based on the size of the variances, would you assume the population variances are equal? YES
+Based on the size of the variances, would you assume the population variances are equal?
+
+YES
 
 #Question 10
 In your sample of 23 art students and 30 economics students, the mean amount that a group of economics students like statistics is 26, while the mean amount that a group of art students like statistics is 15. The variance in the economic group is 4.2, while the variance in the art group is 10.3.
@@ -97,7 +107,7 @@ s2=4.47
 m1 <- c(130)
 m2 <- c(90)
 sd1 <- c(4.47)
-sd2 <- c(4+47)
+sd2 <- c(4.47)
 num1 <- c(300)
 num2 <- c(300)
 se <- sqrt(sd1*sd1/num1+sd2*sd2/num2)
@@ -115,6 +125,9 @@ For option 1 we would use an independent groups analysis.
 For option 2 we would use a “dependent” or “matched” groups analysis.
 
 #14 You’re interested in whether a life coach changes people’s feelings about exercising. You expect that people will like the gym more after meeting a life coach. You first look at whether or not people like the gym before meeting a life coach, then look at whether or not they like the gym after meeting a life coach. The table below shows the results.
+
+1.517929376
+
 
 #15 You are interested in the effects of alcohol on memory and run an experiment where people perform a memory test before and after consuming 6 beers. The table below shows the number of items remembered before beer (left column) and after beer (right column). The standard deviation of the difference score is 2.3.
 
