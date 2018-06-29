@@ -40,6 +40,20 @@ it
 result.prop<-prop.test(it)
 result.prop
 
+2-sample test for equality of proportions with
+	continuity correction
+
+data:  it
+X-squared = 21.894, df = 1, p-value = 2.881e-06
+alternative hypothesis: two.sided
+95 percent confidence interval:
+ -0.7377892 -0.3305199
+sample estimates:
+   prop 1    prop 2 
+0.2553191 0.7894737 
+
+
+
 sqrt(21.894)
 [1] 4.679102
 
@@ -49,7 +63,8 @@ We examine two groups of people who have seen the movie ‘IT’, one group has 
 
 Calculate the relative risk of clown phobia if you don’t go to the circus after seeing the film ‘IT’.
 
-x<-0.0160/0.034
+y<-0.034/0.016
+2.125
 
 #9 You expect that economics students like statistics more than art students, and decide to investigate.
 
@@ -63,6 +78,9 @@ YES
 In your sample of 23 art students and 30 economics students, the mean amount that a group of economics students like statistics is 26, while the mean amount that a group of art students like statistics is 15. The variance in the economic group is 4.2, while the variance in the art group is 10.3.
 
 Calculate your test statistic for finding whether the groups differ in how much they like statistics.
+
+4,8235368
+
 
 n1=23
 x1=15
@@ -116,6 +134,11 @@ left <- (m1-m2)-error
 left
 right <- (m1-m2)+error
 right
+
+lower <- sample_mean - 1.96 * 4.47
+> upper <- sample_mean + 1.96 * 4.47
+> c(lower, upper)
+[1] 31.2388 48.7612
 
 #13 if we want to look at the effect of Mozart and Michael Jackson on IQ score and we have 100 willing participants on whom to test this, we have two options. Option 1 is to compare 50 participants that listen to Michael Jackson, and 50 participants that listen to Mozart. Option 2 is to measure IQ in all participants after listening to Mozart, and then measure IQ in all participants after listening to Michael Jackson.
 
