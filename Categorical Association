@@ -1,6 +1,6 @@
 1. We are in a coffee shop looking at how many men and women order coffee and tea and are making a contingency table with the results. Which of the following is most likely to be our hypothesis if we are planning to run a chi-square test?
 
-#Correct - We want to see if gender and drink preference are independent.
+#Correct - We want to see if gender and drink preference are independent. - Ok
 
 2. The table below shows the observed frequencies of different kinds of crime in three neighborhoods.
 
@@ -15,6 +15,9 @@ N3         39    36        30
 
 prop.table(it)
 
+Correct - Neighborhood2
+
+
 3. If we are looking at whether there is an association between different neighbourhoods and types of crime, which of the following statements is/are correct? Select all that apply.
 
 install.packages("GGally")
@@ -27,15 +30,32 @@ ggcorr(it,
 +        label = TRUE, 
 +        label_alpha = TRUE)
 
+Error
 Our null hypothesis is that neighborhood and type of crime are independent.
 If neighborhood and crime are not independent, we can calculate the observed marginal frequencies by multiplying the joint frequencies, divided by the sample size.
 If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
 
+Error
+Our null hypothesis is that neighborhood and type of crime are independent.
+If neighborhood and crime are independent, we can calculate the observed joint frequencies by multiplying the marginal frequencies, divided by the sample size.
+If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are independent.
+
+Error
+Our null hypothesis is that neighborhood and type of crime are dependent.
+If neighborhood and crime are not independent, we can calculate the observed marginal frequencies by multiplying the joint frequencies, divided by the sample size.
+If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
+
+
+
 4. If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
 Error - 3.447173
+Error - 0.443
+Error - 0.371
 
 5. When looking at the association between types of crime and neighbourhood, we found a Chi-square value of 16.38, with a p-value of 0.003. What can we conclude?
 Error - There is a strong association between neighbourhood and crime.
+Error - There is a moderate association between neighbourhood and crime.
+Error - There is a weak association between neighbourhood and crime.
 
 6. The table below shows beer, water and wine sales at three different sports games. Calculate the Chi-square value and report the value in full.
 tu<-matrix(c(9, 6, 7, 5, 9, 11, 9, 5, 8), ncol=3)
@@ -45,20 +65,31 @@ tu
 list(tu)
 library(gmodels)
 CrossTable(tu)
-C# chisq.test(tu)
+chisq.test(tu)
+#3.3106 Ok
+
 
 
 7. A baker is interested in whether there is an association between three types of cookies, and gender of the buyer. He finds the following contingency table, and a significant Chi-square value of 10.584.
+
+dit<-matrix(c(11, 22, 8, 11, 9, 20), ncol=2)
+colnames(dit)<-c('Men', 'Women')
+rownames(it)<-c('c1', 'n2', 'f3')
+dit
+
 library(vcd)
 res<-assocstats(dit)
-C# print(res)
+print(res)
+
+Correct 0.361 - Ok
 
 8. A researcher is interested in if there is an association between type of pet owned, and voting habits. The following table shows standardised residuals. What can he say about pet ownership and voting behaviour?
-C# Republican and democratic voters seem to have cats and dogs, while independent voters have other pets.
+Correct# Republican and democratic voters seem to have cats and dogs, while independent voters have other pets. - Ok
 
 9. A doctor’s surgery assumes that in one day about 10% of their patients will come in with emergencies, 40% with non-emergencies, and 50% with general questions.
 If 30 patients visit the doctor, what are the expected frequencies of emergencies, non-emergencies and general questions, respectively?
-Error - 6, 24, 30
+
+Correct - 3, 12, 15
 
 10. A doctor’s surgery assumes that about 10% of their patients will come in with emergencies, 40% with non-emergencies, and 50% with general questions.
 One day a doctor sees 15 emergencies, 20 non-emergencies and 19 patients with general questions.
@@ -73,6 +104,14 @@ Visitors come to the cafeteria at random.#
 Visitors purchase more than one food.#
 Not all visitors buy anything.#
 
+#Error
+Visitors purchase more than one food.
+Not all visitors buy anything.
+
+#Error
+Visitors purchase more than one food.
+Not all visitors buy anything.
+
 
 
 
@@ -84,11 +123,21 @@ He had too few cases to reliably reject the null hypothesis.#
 Failing to reject the null hypothesis does not indicate independence.#
 He did not establish an expected distribution beforehand.#
 
+#Error
+He had too few cases to reliably reject the null hypothesis.
+He did not establish an expected distribution beforehand.
+
+Failing to reject the null hypothesis does not indicate independence.
+The sampling was not random.
+
+
 13. You have quite a lot of plants in and outside your house, some of which have flowers, and some of which don't. Your flower data is presented below:
-#Error - The null-hypothesis is wrongly stated and should be rephrased as "there is a relation between flowers and living indoors"#
+
+#Correct - You would reject the null-hypothesis at a significance level of 0.05 - Ok
 
 14.Which of the following tables is not a permutation of the table above in the previous question?
-#Error - Table  3
+
+#Correct - Table 2
 
 15. A researcher is interested in whether or not someone can tell if people are lying or not. The researcher checks whether the person correctly or incorrectly identifies true statements from false statements, and makes the observations shown in the table below. What is the null hypothesis? Select all that apply.
 
@@ -97,3 +146,9 @@ The conditional frequency of correctly identifying a liar has no further permuta
 Correct and incorrect responses are independent from lying and not lying.
 The distribution of expected frequencies is different from 0.
 
+#Error
+The frequency of correctly identifying a liar is equal to the expected frequency of 6.
+The distribution of expected frequencies is different from 0.
+
+Correct and incorrect responses are independent from lying and not lying.
+The distribution of expected frequencies is different from 0.
