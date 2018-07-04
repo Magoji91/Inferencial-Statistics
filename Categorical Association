@@ -1,0 +1,99 @@
+1. We are in a coffee shop looking at how many men and women order coffee and tea and are making a contingency table with the results. Which of the following is most likely to be our hypothesis if we are planning to run a chi-square test?
+
+#Correct - We want to see if gender and drink preference are independent.
+
+2. The table below shows the observed frequencies of different kinds of crime in three neighborhoods.
+
+it<-matrix(c(16, 15, 39, 25, 18, 36, 42, 16, 30), ncol=3)
+colnames(it)<-c('Violence', 'Theft', 'Vandalism')
+rownames(it)<-c('N1', 'N2', 'N3')
+it
+   Nightmares Theft Vandalism
+N1         16    25        42
+N2         15    18        16
+N3         39    36        30
+
+prop.table(it)
+
+3. If we are looking at whether there is an association between different neighbourhoods and types of crime, which of the following statements is/are correct? Select all that apply.
+
+install.packages("GGally")
+library(GGally)
+ggcorr(it)
+
+cor(it)
+
+ggcorr(it, 
++        label = TRUE, 
++        label_alpha = TRUE)
+
+Our null hypothesis is that neighborhood and type of crime are independent.
+If neighborhood and crime are not independent, we can calculate the observed marginal frequencies by multiplying the joint frequencies, divided by the sample size.
+If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
+
+4. If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
+Error - 3.447173
+
+5. When looking at the association between types of crime and neighbourhood, we found a Chi-square value of 16.38, with a p-value of 0.003. What can we conclude?
+Error - There is a strong association between neighbourhood and crime.
+
+6. The table below shows beer, water and wine sales at three different sports games. Calculate the Chi-square value and report the value in full.
+tu<-matrix(c(9, 6, 7, 5, 9, 11, 9, 5, 8), ncol=3)
+colnames(tu)<-c('S', 'T', 'H')
+rownames(tu)<-c('B', 'WA', 'WI')
+tu
+list(tu)
+library(gmodels)
+CrossTable(tu)
+C# chisq.test(tu)
+
+
+7. A baker is interested in whether there is an association between three types of cookies, and gender of the buyer. He finds the following contingency table, and a significant Chi-square value of 10.584.
+library(vcd)
+res<-assocstats(dit)
+C# print(res)
+
+8. A researcher is interested in if there is an association between type of pet owned, and voting habits. The following table shows standardised residuals. What can he say about pet ownership and voting behaviour?
+C# Republican and democratic voters seem to have cats and dogs, while independent voters have other pets.
+
+9. A doctor’s surgery assumes that in one day about 10% of their patients will come in with emergencies, 40% with non-emergencies, and 50% with general questions.
+If 30 patients visit the doctor, what are the expected frequencies of emergencies, non-emergencies and general questions, respectively?
+Error - 6, 24, 30
+
+10. A doctor’s surgery assumes that about 10% of their patients will come in with emergencies, 40% with non-emergencies, and 50% with general questions.
+One day a doctor sees 15 emergencies, 20 non-emergencies and 19 patients with general questions.
+Calculate the Chi-square goodness of fit value.
+Error - 
+
+11. A university cafeteria sells sandwiches, salads and snacks all day. The manager is looking at the association between types of visitors (students, academic staff, general university workers) to see if there is an association between food choice (sandwiches, salads and snacks) and visitor type, so that he can prepare in advance for influxes of certain visitors.
+Which of the following would be a problem for performing a Chi-square analysis? Select all that apply.
+
+#Error
+Visitors come to the cafeteria at random.#
+Visitors purchase more than one food.#
+Not all visitors buy anything.#
+
+
+
+
+12. The cafeteria is open all day. During the cafeteria manager's lunch break, he tracks the three types of people (students, academic staff, general university workers) and the three food orders (sandwiches, salads and snacks). 30 people come in, which leads to a chi-square value with an associated p-value of 0.04, using an alpha level of 0.05. Based on this, he decides to stock up on specific foods for influxes of specific people.
+Which of the following make the manager’s decision problematic? Select all that apply.
+
+#Error
+He had too few cases to reliably reject the null hypothesis.#
+Failing to reject the null hypothesis does not indicate independence.#
+He did not establish an expected distribution beforehand.#
+
+13. You have quite a lot of plants in and outside your house, some of which have flowers, and some of which don't. Your flower data is presented below:
+#Error - The null-hypothesis is wrongly stated and should be rephrased as "there is a relation between flowers and living indoors"#
+
+14.Which of the following tables is not a permutation of the table above in the previous question?
+#Error - Table  3
+
+15. A researcher is interested in whether or not someone can tell if people are lying or not. The researcher checks whether the person correctly or incorrectly identifies true statements from false statements, and makes the observations shown in the table below. What is the null hypothesis? Select all that apply.
+
+# Error
+The conditional frequency of correctly identifying a liar has no further permutations.
+Correct and incorrect responses are independent from lying and not lying.
+The distribution of expected frequencies is different from 0.
+
