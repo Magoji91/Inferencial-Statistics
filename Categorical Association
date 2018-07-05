@@ -50,6 +50,11 @@ Our null hypothesis is that neighborhood and type of crime are dependent.
 If neighborhood and crime are not independent, we can calculate the observed marginal frequencies by multiplying the joint frequencies, divided by the sample size.
 If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are independent.
 
+Error
+Our null hypothesis is that neighborhood and type of crime are dependent.
+If neighborhood and crime are independent, we can calculate the observed joint frequencies by multiplying the marginal frequencies, divided by the sample size
+If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
+
 
 
 4. If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
@@ -60,6 +65,8 @@ Error - 3.447173
 Error - 0.443
 Error - 0.371
 Error - 2
+
+
 
 5. When looking at the association between types of crime and neighbourhood, we found a Chi-square value of 16.38, with a p-value of 0.003. What can we conclude?
 Error - There is a strong association between neighbourhood and crime.
@@ -128,9 +135,10 @@ Not all visitors buy anything.#
 Visitors purchase more than one food.
 Not all visitors buy anything.
 
+Error
 Visitors come to the cafeteria at random.
 Not all visitors buy anything
-
+No students buy salad.
 
 12. The cafeteria is open all day. During the cafeteria manager's lunch break, he tracks the three types of people (students, academic staff, general university workers) and the three food orders (sandwiches, salads and snacks). 30 people come in, which leads to a chi-square value with an associated p-value of 0.04, using an alpha level of 0.05. Based on this, he decides to stock up on specific foods for influxes of specific people.
 Which of the following make the manager’s decision problematic? Select all that apply.
@@ -162,4 +170,8 @@ Error
 The conditional frequency of correctly identifying a liar has no further permutations.
 The frequency of correctly identifying a liar is equal to the expected frequency of 6.
 
+Error
+The conditional frequency of correctly identifying a liar has no further permutations.
+The frequency of correctly identifying a liar is equal to the expected frequency of 6.
+The distribution of expected frequencies is different from 0.
 
