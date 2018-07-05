@@ -45,17 +45,27 @@ Our null hypothesis is that neighborhood and type of crime are dependent.
 If neighborhood and crime are not independent, we can calculate the observed marginal frequencies by multiplying the joint frequencies, divided by the sample size.
 If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
 
+Error
+Our null hypothesis is that neighborhood and type of crime are dependent.
+If neighborhood and crime are not independent, we can calculate the observed marginal frequencies by multiplying the joint frequencies, divided by the sample size.
+If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are independent.
+
 
 
 4. If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
+
+cbind(fa=table(it), fr=prop.table(table(it)))
+
 Error - 3.447173
 Error - 0.443
 Error - 0.371
+Error - 2
 
 5. When looking at the association between types of crime and neighbourhood, we found a Chi-square value of 16.38, with a p-value of 0.003. What can we conclude?
 Error - There is a strong association between neighbourhood and crime.
 Error - There is a moderate association between neighbourhood and crime.
 Error - There is a weak association between neighbourhood and crime.
+None of the above
 
 6. The table below shows beer, water and wine sales at three different sports games. Calculate the Chi-square value and report the value in full.
 tu<-matrix(c(9, 6, 7, 5, 9, 11, 9, 5, 8), ncol=3)
@@ -96,6 +106,16 @@ One day a doctor sees 15 emergencies, 20 non-emergencies and 19 patients with ge
 Calculate the Chi-square goodness of fit value.
 Error - 
 
+freq<-c(15,20,19)
+tab<-as.table(matrix(freq, ncol = 3, byrow = T)
++ )
+chisq.test(tab)
+
+Chi-squared test for given probabilities
+
+data:  tab
+X-squared = 0.77778, df = 2, p-value = 0.6778
+
 11. A university cafeteria sells sandwiches, salads and snacks all day. The manager is looking at the association between types of visitors (students, academic staff, general university workers) to see if there is an association between food choice (sandwiches, salads and snacks) and visitor type, so that he can prepare in advance for influxes of certain visitors.
 Which of the following would be a problem for performing a Chi-square analysis? Select all that apply.
 
@@ -108,26 +128,14 @@ Not all visitors buy anything.#
 Visitors purchase more than one food.
 Not all visitors buy anything.
 
-#Error
-Visitors purchase more than one food.
-Not all visitors buy anything.
-
-
+Visitors come to the cafeteria at random.
+Not all visitors buy anything
 
 
 12. The cafeteria is open all day. During the cafeteria manager's lunch break, he tracks the three types of people (students, academic staff, general university workers) and the three food orders (sandwiches, salads and snacks). 30 people come in, which leads to a chi-square value with an associated p-value of 0.04, using an alpha level of 0.05. Based on this, he decides to stock up on specific foods for influxes of specific people.
 Which of the following make the manager’s decision problematic? Select all that apply.
 
-#Error
-He had too few cases to reliably reject the null hypothesis.#
-Failing to reject the null hypothesis does not indicate independence.#
-He did not establish an expected distribution beforehand.#
-
-#Error
 He had too few cases to reliably reject the null hypothesis.
-He did not establish an expected distribution beforehand.
-
-Failing to reject the null hypothesis does not indicate independence.
 The sampling was not random.
 
 
@@ -150,5 +158,8 @@ The distribution of expected frequencies is different from 0.
 The frequency of correctly identifying a liar is equal to the expected frequency of 6.
 The distribution of expected frequencies is different from 0.
 
-Correct and incorrect responses are independent from lying and not lying.
-The distribution of expected frequencies is different from 0.
+Error
+The conditional frequency of correctly identifying a liar has no further permutations.
+The frequency of correctly identifying a liar is equal to the expected frequency of 6.
+
+
