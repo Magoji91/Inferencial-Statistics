@@ -55,7 +55,10 @@ Our null hypothesis is that neighborhood and type of crime are dependent.
 If neighborhood and crime are independent, we can calculate the observed joint frequencies by multiplying the marginal frequencies, divided by the sample size
 If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
 
-
+Error
+Our null hypothesis is that neighborhood and type of crime are dependent.
+If neighborhood and crime are independent, we can calculate the observed joint frequencies by multiplying the marginal frequencies, divided by the sample size
+If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are independent.
 
 4. If the expected frequencies under the null hypothesis are significantly different from the observed frequencies, then the categories are dependent.
 
@@ -123,6 +126,12 @@ Chi-squared test for given probabilities
 data:  tab
 X-squared = 0.77778, df = 2, p-value = 0.6778
 
+observed = c(15, 20, 19)
+expected = c(0.1, 0.4, 0.5)
+
+chisq.test(x = observed,
+           p = expected)
+
 11. A university cafeteria sells sandwiches, salads and snacks all day. The manager is looking at the association between types of visitors (students, academic staff, general university workers) to see if there is an association between food choice (sandwiches, salads and snacks) and visitor type, so that he can prepare in advance for influxes of certain visitors.
 Which of the following would be a problem for performing a Chi-square analysis? Select all that apply.
 
@@ -140,11 +149,20 @@ Visitors come to the cafeteria at random.
 Not all visitors buy anything
 No students buy salad.
 
+Error
+Visitors come to the cafeteria at random.
+Visitors purchase more than one food.
+
+Visitors come to the cafeteria at random.
+Not all visitors buy anything.
+
 12. The cafeteria is open all day. During the cafeteria manager's lunch break, he tracks the three types of people (students, academic staff, general university workers) and the three food orders (sandwiches, salads and snacks). 30 people come in, which leads to a chi-square value with an associated p-value of 0.04, using an alpha level of 0.05. Based on this, he decides to stock up on specific foods for influxes of specific people.
 Which of the following make the manager’s decision problematic? Select all that apply.
 
 He had too few cases to reliably reject the null hypothesis.
 The sampling was not random.
+
+
 
 
 13. You have quite a lot of plants in and outside your house, some of which have flowers, and some of which don't. Your flower data is presented below:
@@ -157,20 +175,5 @@ The sampling was not random.
 
 15. A researcher is interested in whether or not someone can tell if people are lying or not. The researcher checks whether the person correctly or incorrectly identifies true statements from false statements, and makes the observations shown in the table below. What is the null hypothesis? Select all that apply.
 
-# Error
-The conditional frequency of correctly identifying a liar has no further permutations.
+The frequency of correctly identifying a liar is equal to the expected frequency of 6.
 Correct and incorrect responses are independent from lying and not lying.
-The distribution of expected frequencies is different from 0.
-
-#Error
-The frequency of correctly identifying a liar is equal to the expected frequency of 6.
-The distribution of expected frequencies is different from 0.
-
-Error
-The conditional frequency of correctly identifying a liar has no further permutations.
-The frequency of correctly identifying a liar is equal to the expected frequency of 6.
-
-Error
-The conditional frequency of correctly identifying a liar has no further permutations.
-The frequency of correctly identifying a liar is equal to the expected frequency of 6.
-The distribution of expected frequencies is different from 0.
