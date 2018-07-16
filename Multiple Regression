@@ -87,19 +87,27 @@ Errado - 2
 
 What is the F-test statistic?
 
-# Find the R squared as (sst - ssr)/sst
-(sst - ssr) / sst
+The exercise statement tells you that :
 
+- n = 20
+- the number of predictors in the model (= m)
+- The Error sum of squares = 10.6
+- The Total sum of squares = 26.2
 
-# Find the regression mean square
-rms <- (sst - ssr) / 2
-rms<-(26.2-10.6)/2
-  
-# Find the mean squared error
-mse <- (26.2-10.6) / 19
-  
-# Use rms and mse to find the F statsitic
-rms / mse
+We know from video-lecture 4.02 that :
+
+- Total sum of squares – Residual sum of squares = Regression sum of squares
+
+- We also know from this same video-lecture that the Residual sum of square represents the Error in our model.
+
+Based on these elements, maybe there is a little bit of calculation to make….
+And last but not least, video-lecture 4.03 gives us the following formula for the overall F-test :
+
+F = (Regression / k-1) / (Residual / n-k)
+
+And we know that k = m + 1
+I have just checked the result rounded to 4 decimal places (x.xxxx) and it was accepted.
+
 
 9. Your null hypothesis was that the regression coefficients for level of attraction, amount of loneliness, desperation and fear of rejection are all 0.
 
@@ -143,7 +151,7 @@ Certo R. -3 or less
 The company finds that the prize indicator coefficient is 2.6. What does this mean?
 
 Errado - The slope is 2.6 units higher when vouchers are offered rather than cash.
-The slope is 2.6 units higher when cash is offered rather than vouchers.
+Errado -The slope is 2.6 units higher when cash is offered rather than vouchers.
 
 17. The company decides to look at three other prizes in addition to cash and vouchers: a car, a holiday and a computer.
 
@@ -160,7 +168,7 @@ Correto R. The odds of voting will change by a multiplicative factor of 3.210 wh
 
 19. Pergunta 19
 Based on the politicians model expressed in terms of log-odds, with an intercept of 0.400 and a regression coefficient of 1.166, what is the probability that a person with a conscientiousness score of 0.5 will turn up to vote?
-
+p(y) = (e^(a + bx))/(1+e^(a + bx))
 
 20. The table below shows the predicted and observed values for 20 voters using the politician's logistic regression model.
 
