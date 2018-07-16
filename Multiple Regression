@@ -10,7 +10,7 @@ Correct - R. The model’s R-squared.
 
 3. Calculate the total sum of squares for the table below.
 
-Correct
+Correct - 0.227918
 
 # Vector containing the amount of money you gave participants (predictor)
 money  <- c(2.88, 3.22, 3.56, 3.9, 4.24)
@@ -71,7 +71,7 @@ resmod / sd(resmod)
 4. Calculate the regression sum of squares for the table below
 Errado
 
-5. Certo
+5. Certo - 0.227918
 
 6.Based on the total sum of squares and regression sum of squares, what can we say about our model of monster scariness?
 
@@ -81,6 +81,7 @@ Correto - R . Blood, teeth and cuteness can account for less than half of the va
 
 How many parameters are in the model? 
 Errado - 3
+Errado - 2
 
 8. After 20 observations, the model predicting how likely a person is to ask someone on a date based on level of attraction, amount of loneliness, desperation and fear of rejection has an error sum of squares of 10.6 and a total sum of squares of 26.2.
 
@@ -92,10 +93,10 @@ What is the F-test statistic?
 
 # Find the regression mean square
 rms <- (sst - ssr) / 2
-rms<-(26.2-10.6)/3
+rms<-(26.2-10.6)/2
   
 # Find the mean squared error
-mse <- (10.6) / 18
+mse <- (26.2-10.6) / 19
   
 # Use rms and mse to find the F statsitic
 rms / mse
@@ -123,12 +124,13 @@ lower <- sample_mean - 1.96 * 4.47
 13. Pergunta 13
 Based on the confidence interval calculated in the previous two questions, is age significantly related to number of episodes watched, when controlling for hours of free time? 
 
-Correcto: No
+Correct: No
 
 14. Suppose both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. The TV company looked at viewers of Downtown Castle between the ages of 20 and 50. Suppose they looked at a full range of ages in the population, and found that people beyond this range of 20 to 50 watch much less Downtown Castle with much less variation in their scores.
 
 Which assumptions will this new data set likely violate? Select all that apply
 Errado - bdf
+Errado - bde
 
 15. Both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. However, later on the TV company found out that one of their participants who were both high on age and free time did not have access to a TV!
 
@@ -141,12 +143,14 @@ Certo R. -3 or less
 The company finds that the prize indicator coefficient is 2.6. What does this mean?
 
 Errado - The slope is 2.6 units higher when vouchers are offered rather than cash.
+The slope is 2.6 units higher when cash is offered rather than vouchers.
 
 17. The company decides to look at three other prizes in addition to cash and vouchers: a car, a holiday and a computer.
 
 How many dummy variables will the company use in their model?
 
 Errado 2
+Errado 1
 
 18. A politician is interested in voting turnout. She runs a logistic regression model where 1 = turn up to vote, 0 = don’t turn up to vote, and finds that Conscientiousness as a personality trait was a significant predictor of voting. The odds coefficient for Conscientiousness was 3.210.
 
@@ -154,6 +158,12 @@ Which of the following is true?
 
 Correto R. The odds of voting will change by a multiplicative factor of 3.210 when Conscientiousness increases by 1.
 
+19. Pergunta 19
+Based on the politicians model expressed in terms of log-odds, with an intercept of 0.400 and a regression coefficient of 1.166, what is the probability that a person with a conscientiousness score of 0.5 will turn up to vote?
+
+
 20. The table below shows the predicted and observed values for 20 voters using the politician's logistic regression model.
 
 21. The table below shows the predicted and observed values for 20 voters using the politician's logistic regression model.
+
+library(caret)
