@@ -1,0 +1,12 @@
+1. You want to develop a scary monster to star in a horror film. You’re pretty sure that blood and teeth make the monster more scary, whereas cuteness makes the monster less scary. You want to put this to the test with a linear regression model. Which of the following formulas would be appropriate?
+
+R. Scariness = a + 1.6*(blood) + 2.8*(teeth) - 3.2*(cuteness)
+
+2. Your friend says that your scary monster model is useless, and the only thing that makes a difference to scariness is whether the monster has a weapon.
+
+What could you show your friend to prove that your model is useful?
+
+R. The model’s R-squared.
+
+3. Pergunta 3
+Calculate the total sum of squares for the table below.
