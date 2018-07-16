@@ -1,15 +1,16 @@
 1. You want to develop a scary monster to star in a horror film. You’re pretty sure that blood and teeth make the monster more scary, whereas cuteness makes the monster less scary. You want to put this to the test with a linear regression model. Which of the following formulas would be appropriate?
 
-R. Scariness = a + 1.6*(blood) + 2.8*(teeth) - 3.2*(cuteness)
+Correct - R. Scariness = a + 1.6*(blood) + 2.8*(teeth) - 3.2*(cuteness)
 
 2. Your friend says that your scary monster model is useless, and the only thing that makes a difference to scariness is whether the monster has a weapon.
 
 What could you show your friend to prove that your model is useful?
 
-R. The model’s R-squared.
+Correct - R. The model’s R-squared.
 
-3. Pergunta 3
-Calculate the total sum of squares for the table below.
+3. Calculate the total sum of squares for the table below.
+
+Correct
 
 # Vector containing the amount of money you gave participants (predictor)
 money  <- c(2.88, 3.22, 3.56, 3.9, 4.24)
@@ -28,9 +29,11 @@ mod1$r.squared
 
 # Sum and square the residuals from lm(liking ~ money), assign to object 'ssr'
 ssr <- sum((lm(liking~money)$residual) ^ 2)
+ssr
 
 # Sum and square the value of mean liking - observed liking, assign to object 'sst'
 sst <- sum((mean(liking) - liking) ^ 2)
+sst
 
 # Find the R squared as (sst - ssr)/sst
 (sst - ssr) / sst
@@ -38,12 +41,6 @@ sst <- sum((mean(liking) - liking) ^ 2)
 # Find the regression mean square
 rms <- (sst - ssr) / 2
   
-# Find the mean squared error
-mse <- (ssr) / 7
-  
-# Use rms and mse to find the F statsitic
-rms / mse
-
 # Fited model
 mod <- lm(liking ~ money)
 
@@ -71,17 +68,92 @@ resmod <- mod$residuals
 # Print the standardized residuals
 resmod / sd(resmod)
 
+4. Calculate the regression sum of squares for the table below
+Errado
+
+5. Certo
+
 6.Based on the total sum of squares and regression sum of squares, what can we say about our model of monster scariness?
 
-R . Blood, teeth and cuteness can account for less than half of the variation in monster scariness.
+Correto - R . Blood, teeth and cuteness can account for less than half of the variation in monster scariness.
 
 7. Sometimes it’s scary to ask people out on dates, and sometimes it’s easier. A dating researcher decides to try to build a model to predict how likely a person is to ask someone on a date based on the following predictors: level of attraction, amount of loneliness, desperation, fear of rejection.
 
-How many parameters are in the model? 3
+How many parameters are in the model? 
+Errado - 3
 
 8. After 20 observations, the model predicting how likely a person is to ask someone on a date based on level of attraction, amount of loneliness, desperation and fear of rejection has an error sum of squares of 10.6 and a total sum of squares of 26.2.
 
 What is the F-test statistic?
 
+# Find the R squared as (sst - ssr)/sst
+(sst - ssr) / sst
 
 
+# Find the regression mean square
+rms <- (sst - ssr) / 2
+rms<-(26.2-10.6)/3
+  
+# Find the mean squared error
+mse <- (10.6) / 18
+  
+# Use rms and mse to find the F statsitic
+rms / mse
+
+9. Your null hypothesis was that the regression coefficients for level of attraction, amount of loneliness, desperation and fear of rejection are all 0.
+
+What is the threshold value above which the F-statistic must lie in order to reject the null hypothesis at the 0.05 level? Use the F-table in the formulas and tables document and round the value to three decimal places.
+
+Errado
+
+10. A TV company is interested in the people watching their period drama show “Downtown Castle” that is set in the early 1900s. They found an overall F-statistic suggesting that together, age and hours of free time significantly predicted the number of episodes of Downtown Castle that people watched in a sample of 30. The slope coefficient for age was 4.5, with a standard error of 2.5
+
+N<-30
+Slope<-4.5
+SD<-2.5
+
+11. Based on the Downtown Castle model, calculate the upper boundary of the 95% confidence interval for the age slope coefficient. You can select the critical t-value from the table.
+
+upper <- sample_mean + 1.96 * 4.47
+
+12.Based on the Downtown Castle model, calculate the lower boundary of the 95% confidence interval for the age slope coefficient.
+
+lower <- sample_mean - 1.96 * 4.47
+
+13. Pergunta 13
+Based on the confidence interval calculated in the previous two questions, is age significantly related to number of episodes watched, when controlling for hours of free time? 
+
+Correcto: No
+
+14. Suppose both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. The TV company looked at viewers of Downtown Castle between the ages of 20 and 50. Suppose they looked at a full range of ages in the population, and found that people beyond this range of 20 to 50 watch much less Downtown Castle with much less variation in their scores.
+
+Which assumptions will this new data set likely violate? Select all that apply
+Errado - bdf
+
+15. Both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. However, later on the TV company found out that one of their participants who were both high on age and free time did not have access to a TV!
+
+Which of the following standardized residual values would you most expect this participant to show?
+
+Certo R. -3 or less
+
+16. A company desperately wants people to complete a survey, and decide to offer prizes to incentivize participation. They have data from past surveys. In some cases participants could win cash, in other cases they could win vouchers. The company built a model to predict survey participation with prize, age and income as predictors. A value of 1 for the indicator prize indicates cash, a value of 0 indicates vouchers were offered.
+
+The company finds that the prize indicator coefficient is 2.6. What does this mean?
+
+Errado - The slope is 2.6 units higher when vouchers are offered rather than cash.
+
+17. The company decides to look at three other prizes in addition to cash and vouchers: a car, a holiday and a computer.
+
+How many dummy variables will the company use in their model?
+
+Errado 2
+
+18. A politician is interested in voting turnout. She runs a logistic regression model where 1 = turn up to vote, 0 = don’t turn up to vote, and finds that Conscientiousness as a personality trait was a significant predictor of voting. The odds coefficient for Conscientiousness was 3.210.
+
+Which of the following is true?
+
+Correto R. The odds of voting will change by a multiplicative factor of 3.210 when Conscientiousness increases by 1.
+
+20. The table below shows the predicted and observed values for 20 voters using the politician's logistic regression model.
+
+21. The table below shows the predicted and observed values for 20 voters using the politician's logistic regression model.
