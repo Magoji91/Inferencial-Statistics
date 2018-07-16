@@ -10,3 +10,65 @@ R. The model’s R-squared.
 
 3. Pergunta 3
 Calculate the total sum of squares for the table below.
+
+# Vector containing the amount of money you gave participants (predictor)
+money  <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+# Vector containing the amount the participants liked you (response)
+liking <- c(2.2, 2.8, 4.5, 3.1, 8.7, 5.0, 4.5, 8.8, 9.0, 9.2)
+
+# Find the regression coefficients for liking, predicted by smile and money
+lm(liking~smile+money)
+
+# Assign the summary of lm(liking ~ smile) to 'mod1'
+mod1 <- summary(lm(liking ~ smile + money))
+
+# Print the R-squared of 'mod1'
+mod1$r.squared
+
+# Sum and square the residuals from lm(liking ~ smile + money), assign to object 'ssr'
+ssr <- sum((lm(liking~ smile)$residual) ^ 2)
+
+# Sum and square the value of mean liking - observed liking, assign to object 'sst'
+sst <- sum((mean(liking) - liking) ^ 2)
+
+# Find the R squared as (sst - ssr)/sst
+(sst - ssr) / sst
+
+# Find the regression mean square
+rms <- (sst - ssr) / 2
+  
+# Find the mean squared error
+mse <- (ssr) / 7
+  
+# Use rms and mse to find the F statsitic
+rms / mse
+
+# Fited model
+mod <- lm(liking ~ smile)
+
+# Find confidence interval of fitted model
+confint(mod, level = 0.9)
+
+# Assign regression model to object "mod"
+mod <- lm(liking ~ smile)
+
+# Obtain the residuals from mod using $, assign to "resmod"
+resmod <- mod$residuals
+
+# Plot the 'smile' on the x-axis, with the residuals on the y-axis
+plot(smile, resmod)
+
+# Plot the 'money' on the x-axis, with the residuals on the y-axis
+plot(money, resmod)
+
+# Assign regression model to object "mod"
+mod <- lm(liking ~ smile + money)
+
+# Obtain the residuals from mod using $, assign to "resmod"
+resmod <- mod$residuals
+
+# Print the standardized residuals
+resmod / sd(resmod)
+
+
