@@ -88,14 +88,9 @@ Correto 5
 
 What is the F-test statistic?
 
-mse<-10.6/(20-4)
- mse
-[1] 0.6625
-msreg<-26.2/(020-1)
-msreg
-[1] 1.378947
-msreg/mse
-[1] 2.08143
+SSE<-10.6
+N<-20
+SST<-26.2
 
 The exercise statement tells you that :
 
@@ -135,9 +130,9 @@ SD<-2.5
 
 n=300 X1=130 X2=90 n2=300 s1=4.47 s2=4.47
 
-lower <- 30 - 1.96 * 2.5
+lower <- 1 - 1.96 * 2.5
 
-upper <- 30 + 1.96 * 2.5 
+upper <- 1 + 1.96 * 2.5 
 
 12.Based on the Downtown Castle model, calculate the lower boundary of the 95% confidence interval for the age slope coefficient.
 
@@ -155,6 +150,7 @@ Errado - bdf
 Errado - bde
 Errado - abd
 Errado - bce
+Errado - bcd
 
 15. Both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. However, later on the TV company found out that one of their participants who were both high on age and free time did not have access to a TV!
 
