@@ -133,7 +133,11 @@ SD<-2.5
 
 11. Based on the Downtown Castle model, calculate the upper boundary of the 95% confidence interval for the age slope coefficient. You can select the critical t-value from the table.
 
-upper <- sample_mean + 1.96 * 4.47
+n=300 X1=130 X2=90 n2=300 s1=4.47 s2=4.47
+
+lower <- 30 - 1.96 * 2.5
+
+upper <- 30 + 1.96 * 2.5 
 
 12.Based on the Downtown Castle model, calculate the lower boundary of the 95% confidence interval for the age slope coefficient.
 
@@ -150,7 +154,7 @@ Which assumptions will this new data set likely violate? Select all that apply
 Errado - bdf
 Errado - bde
 Errado - abd
-         bce
+Errado - bce
 
 15. Both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. However, later on the TV company found out that one of their participants who were both high on age and free time did not have access to a TV!
 
@@ -182,7 +186,8 @@ Based on the politicians model expressed in terms of log-odds, with an intercept
 p(y) = (e^(a + bx))/(1+e^(a + bx))
 
 20. The table below shows the predicted and observed values for 20 voters using the politician's logistic regression model.
+Correto - 0.89
 
 21. The table below shows the predicted and observed values for 20 voters using the politician's logistic regression model.
+Correto - 0.82
 
-library(caret)
