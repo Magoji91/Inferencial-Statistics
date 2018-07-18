@@ -88,13 +88,13 @@ Correto 5
 
 What is the F-test statistic?
 
-> mse<-10.6/(20-4)
-> mse
+mse<-10.6/(20-4)
+ mse
 [1] 0.6625
-> msreg<-26.2/(020-1)
-> msreg
+msreg<-26.2/(020-1)
+msreg
 [1] 1.378947
-> msreg/mse
+msreg/mse
 [1] 2.08143
 
 The exercise statement tells you that :
@@ -150,6 +150,7 @@ Which assumptions will this new data set likely violate? Select all that apply
 Errado - bdf
 Errado - bde
 Errado - abd
+         bce
 
 15. Both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. However, later on the TV company found out that one of their participants who were both high on age and free time did not have access to a TV!
 
