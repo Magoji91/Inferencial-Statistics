@@ -142,12 +142,13 @@ Slope<-4.5
 SD<-2.5
 
 11. Based on the Downtown Castle model, calculate the upper boundary of the 95% confidence interval for the age slope coefficient. You can select the critical t-value from the table.
-
-n=300 X1=130 X2=90 n2=300 s1=4.47 s2=4.47
-
-lower <- 1 - 1.96 * 2.5
-
-upper <- 1 + 1.96 * 2.5 
+Mean value (x) = 34 mm (VAS score)
+Standard deviation (s) = 18 mm
+Number of subjects (N) = 40
+Standard error (SE) = s
+√n = 18/
+√40 = 2.8 mm
+95% CI = mean ± 1.96 × SE = 34 ± 1.96 × 2.8 = 34 ± 5.5 = 28 to 40 mm
 
 12.Based on the Downtown Castle model, calculate the lower boundary of the 95% confidence interval for the age slope coefficient.
 
@@ -167,7 +168,7 @@ Errado - bcd
 Errado - bce
 Erradp - bcf
 Errado - abd
-acf
+Errado - acf
 
 
 15. Both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. However, later on the TV company found out that one of their participants who were both high on age and free time did not have access to a TV!
