@@ -135,9 +135,10 @@ Errado
 
 10. A TV company is interested in the people watching their period drama show “Downtown Castle” that is set in the early 1900s. They found an overall F-statistic suggesting that together, age and hours of free time significantly predicted the number of episodes of Downtown Castle that people watched in a sample of 30. The slope coefficient for age was 4.5, with a standard error of 2.5
 
-N<-30
-
+n<-30
+#B1 = SLOPE
 Slope<-4.5
+# STANDARD ERROR
 SD<-2.5
 
 11. Based on the Downtown Castle model, calculate the upper boundary of the 95% confidence interval for the age slope coefficient. You can select the critical t-value from the table.
@@ -166,6 +167,7 @@ Errado - bcd
 Errado - bce
 Erradp - bcf
 Errado - abd
+acf
 
 
 15. Both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. However, later on the TV company found out that one of their participants who were both high on age and free time did not have access to a TV!
