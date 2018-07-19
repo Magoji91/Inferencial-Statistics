@@ -88,9 +88,23 @@ Correto 5
 
 What is the F-test statistic?
 
+m<-4
+k <- m + 1
 SSE<-10.6
-N<-20
+n<-20
 SST<-26.2
+SSR<-SST-SSE
+
+MSR<-SSR/(k-1)
+MSE<-SSE/(n-k)
+
+F<-MSR/MSE
+
+F<-(Regression / k-1) / (Residual / n-k)
+
+5.518868
+
+R2<-SSR/SST
 
 The exercise statement tells you that :
 
@@ -102,7 +116,6 @@ The exercise statement tells you that :
 We know from video-lecture 4.02 that :
 
 - Total sum of squares – Residual sum of squares = Regression sum of squares
-
 - We also know from this same video-lecture that the Residual sum of square represents the Error in our model.
 
 Based on these elements, maybe there is a little bit of calculation to make….
@@ -123,6 +136,7 @@ Errado
 10. A TV company is interested in the people watching their period drama show “Downtown Castle” that is set in the early 1900s. They found an overall F-statistic suggesting that together, age and hours of free time significantly predicted the number of episodes of Downtown Castle that people watched in a sample of 30. The slope coefficient for age was 4.5, with a standard error of 2.5
 
 N<-30
+
 Slope<-4.5
 SD<-2.5
 
@@ -148,9 +162,11 @@ Correct: No
 Which assumptions will this new data set likely violate? Select all that apply
 Errado - bdf
 Errado - bde
-Errado - abd
-Errado - bce
 Errado - bcd
+Errado - bce
+Erradp - bcf
+Errado - abd
+
 
 15. Both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. However, later on the TV company found out that one of their participants who were both high on age and free time did not have access to a TV!
 
