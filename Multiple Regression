@@ -141,6 +141,10 @@ Slope<-4.5
 # STANDARD ERROR
 SD<-2.5
 
+Correto R. 1.8
+
+
+
 11. Based on the Downtown Castle model, calculate the upper boundary of the 95% confidence interval for the age slope coefficient. You can select the critical t-value from the table.
 Mean value (x) = 34 mm (VAS score)
 Standard deviation (s) = 18 mm
@@ -169,7 +173,9 @@ Errado - bce
 Erradp - bcf
 Errado - abd
 Errado - acf
-
+Errado - ade
+Errado - ace
+Errado - adf
 
 15. Both age and amount of free time positively predict the number of episodes of Downtown Castle that people watched. However, later on the TV company found out that one of their participants who were both high on age and free time did not have access to a TV!
 
@@ -199,6 +205,7 @@ Correto R. The odds of voting will change by a multiplicative factor of 3.210 wh
 19. Pergunta 19
 Based on the politicians model expressed in terms of log-odds, with an intercept of 0.400 and a regression coefficient of 1.166, what is the probability that a person with a conscientiousness score of 0.5 will turn up to vote?
 p(y) = (e^(a + bx))/(1+e^(a + bx))
+exp(log(p/(1-p))(math=55))
 
 20. The table below shows the predicted and observed values for 20 voters using the politician's logistic regression model.
 Correto - 0.89
