@@ -1,0 +1,5 @@
+1. Why would we use analysis of variance to compare groups, rather than multiple t-tests?
+It provides a measure of variance.
+
+2. You research the growth rates of plants with three different types of light source. You find that the between-group variance in plant growth greatly exceeds the within-group variance. What does this mean?
+Each plant group may come from a different population distribution
