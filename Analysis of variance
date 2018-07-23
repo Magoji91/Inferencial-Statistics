@@ -24,7 +24,7 @@ sample_classical <- nrow(classical_data)
 sample_hiphop <- nrow(hiphop_data)
 
 # calculate the sample size of the pop genre
-sample_pop <- nrow(pop_data)
+
 
 # calculate the between group variance
 between_group_variance <- (sample_classical * (classical_average - grand_mean)^2 + sample_hiphop * (hiphop_average - grand_mean)^2 + sample_pop * (pop_average - grand_mean)^2) / 2
