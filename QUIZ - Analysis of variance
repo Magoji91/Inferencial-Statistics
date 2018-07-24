@@ -9,6 +9,45 @@ Correta - Each plant group may come from a different population distribution
 3. Some of us need a little help to keep our energy levels up when we’re learning statistics. You run an experiment where you give people energy drinks, and see how many statistics chapters they complete. The table below shows the number of statistical tests people learned after drinking energy drinks. One group drank a can of ‘Blue Cow’, one group drank a can of ‘Popstar’ and one drank a can of ‘Demon’.
 Calculate the within-group variance for your data.
 
+Vector containing the amount of money you gave participants (predictor)
+blue <- c(3, 5, 4, 7)
+ 
+# Vector containing how much you smiled (predictor)
+pop <- c(3, 6, 5, 8)
+ 
+# Vector containing the amount the participants liked you (response)
+demon <- c(2, 4, 5, 6)
+
+model<-c(blue, pop, demon)
+model
+summary(model)
+summary(blue)
+summary(pop)
+summary(demon)
+
+groups = factor(rep(letters[1:3], each = 4))
+bartlett.test(model, groups)
+qchisq(0.950, 2)
+
+fligner.test(model, groups)
+
+fit = lm(formula = model ~ groups)
+anova (fit)
+qf(0.950, 9, 2)
+
+degreesOfFreedom = anova(fit)[, "Df"]
+degreesOfFreedom
+
+#Error or within-group variance
+anova(fit)["Residuals", "Mean Sq"]
+3.388889
+
+#Between-group variance
+anova(fit)["groups", "Mean Sq"]
+1.583333
+
+
+
 4. The table below shows the number of statistical tests people learned after drinking energy drinks.
 Calculate the between-group variance for your data. The grand mean is 4.83.
 
@@ -29,6 +68,10 @@ Correta - 6 tests, 0.008
 
 8. A vegetable shop owner was having trouble selling tomatoes, so he went to a sales convention where vegetable shop owners could discuss their favourite strategies. Five said that placing tomatoes at the window was best, five said near the cash desk, and five said outside. To figure this out once and for all, he gathered data of tomato sales from all 15 of these vegetable shop owners, and conducted a one-way ANOVA comparing mean tomato sales for different locations. The table below shows mean tomato sales for each location. The within-group sum of squares is 102
 Calculate the upper 95% confidence interval boundary for the difference between the cash desk location, and outside location (in your calculation use: cash desk - outside). Use an alpha level of 0.05.
+n<-15
+sw<-102
+
+
 
 9. The table below shows mean tomato sales for each location. The within-group sum of squares was 102. Calculate the lower 95% confidence interval boundary for the difference between the cash desk location, and outside location (in your calculation use: cash desk - outside). Use an alpha level of 0.05.
 
