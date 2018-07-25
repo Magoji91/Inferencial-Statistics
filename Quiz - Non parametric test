@@ -20,21 +20,20 @@ wilcox.test(y,x,conf.int=TRUE)
 rank.test(x,y,scores=nscores)
 rank.test(x,y,scores=nscores,conf.int=TRUE)
 
-Acertei - b
+INCORRETA- b
 
 5. Based on your tests statistic, what can we say about Wayne East’s new album?
 
-Acertei - The median rating is significantly lower than 2.
+INCORRETA - The median rating is significantly lower than 2.
 
 
 9. A cat lover has 18 cats, from four different breeds. He is interested in whether one breed is significantly larger than the others and runs a Kruskal-Wallis test to check this.
 
-Errei - At least one breed of cat does not have a significantly different size.
-At least one breed of cat has a significantly different size.
+CORRETA - At least one breed of cat has a significantly different size.
 
 10. Under what circumstance would the cat lover be able to use a one-way ANOVA instead of a Kruskal-Wallis?
 Errei - If the distribution in each group was skewed.
-If he had unequal numbers of cats in each group.
+ERREI - If he had unequal numbers of cats in each group.
 
 11. Which of the plots below would we label as linear, and which would we label as monotonic?
 
@@ -42,8 +41,7 @@ Correta - Plot 3 is monotonic, plot 2 is linear.
 
 13. What can we conclude about study hours and grades based on the obtained Spearman correlation coefficient?
 
-Errado - There is a weak negative relationship between study hours and grades.
-There is a weak positive relationship between study hours and grades.
+CORRETA - There is a weak positive relationship between study hours and grades.
 
 15.Can we reject the null hypothesis that the order of animals at the cat and dog parade was random?
 Correta -  NO
