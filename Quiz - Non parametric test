@@ -20,28 +20,48 @@ wilcox.test(y,x,conf.int=TRUE)
 rank.test(x,y,scores=nscores)
 rank.test(x,y,scores=nscores,conf.int=TRUE)
 
-INCORRETA- b
+Correta - 1 - 3
+
+4. You’re interested in Wayne East’s new album. People seem to be very excited about it, but is it really that good? You ask your friends to rate it on a scale of 1 to 4, and expect that the median score will be higher than 2. Your friends ratings were 3.5, 4.2, 2.3, 3.0 and 1.0.
+You decide to check this with a Wilcoxon signed rank test. What is the test statistic?
+x <- c(1, 2, 3, 4)
+y <- c(3.5, 4.2, 2.3, 3, 1)
 
 5. Based on your tests statistic, what can we say about Wayne East’s new album?
 
-INCORRETA - The median rating is significantly lower than 2.
+Correta - The median rating is not significantly different from 2.
 
+6. You’re still not convinced of your findings about Wayne East’s album, so you decide to do an experiment on how happy people are after listening to Wayne’s new album, and compare this to a group that listen to a lecture on Astrophysics. The table below shows the enjoyment levels in both groups.
+
+7. Based on the table in the previous question, what is the sum of the ranks in the Astrophysics group?
+
+8. Based on comparing the Wayne East and Astrophysics, what is the test statistic if we run a Wilcoxon rank sum test?
 
 9. A cat lover has 18 cats, from four different breeds. He is interested in whether one breed is significantly larger than the others and runs a Kruskal-Wallis test to check this.
 
 CORRETA - At least one breed of cat has a significantly different size.
 
 10. Under what circumstance would the cat lover be able to use a one-way ANOVA instead of a Kruskal-Wallis?
-Errei - If the distribution in each group was skewed.
-ERREI - If he had unequal numbers of cats in each group.
+Correta - If he had more cats.
 
 11. Which of the plots below would we label as linear, and which would we label as monotonic?
 
 Correta - Plot 3 is monotonic, plot 2 is linear.
 
+12. You are interested in whether the time spent studying leads to better grades. The table below shows the number of hours spent studying, and the rank order of grades in a class (1 = best grade, 5 = worst grade).
+a<-c(10,13,3,16,4)
+b<-c(1,4,2,3,5)
+cor.test(a, b, method="spearman")
+Correta - 0.1
+
 13. What can we conclude about study hours and grades based on the obtained Spearman correlation coefficient?
 
 CORRETA - There is a weak positive relationship between study hours and grades.
+
+14. The “Beautiful Pets” fashion show opens with the cat and dog parade, where cats and dogs appear on stage one after the other to showcase their outfits.
+This year the cats and dogs appear in the following order:
+C, D, C, D, D, C, C, C, C, D, D, C, D
+Where ‘C’ represents a cat, and ‘D’ represents a dog. How many runs were there in this sequence?
 
 15.Can we reject the null hypothesis that the order of animals at the cat and dog parade was random?
 Correta -  NO
