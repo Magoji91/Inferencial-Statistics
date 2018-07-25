@@ -1,0 +1,40 @@
+#To test our hypothesis, we've started to collect data. We sampled a total of 350 American citizens from different states. In our little census, we found that 60% of our sample indicated that they would vote for Hillary Clinton. Does this still mean that there is an equal chance that an American citizen votes for Hillary Clinton or Bernie Sanders?
+
+#In order to test this, we use the R function binom.test(). This functions accepts the parameters x, n, p and alternative. x here represents the number of successes. In this case that would be 0.6 * 350 as this the amount of people that voted for Hillary Clinton in our sample. n represents the sample size which is 350 in our current example. p represents the hypothesized probability of success. As our null hypothesis states that we expect an equal amount of American citizens to vote for Hillary Clinton or Bernie Sanders, this comes down to 0.5 in our example. alternative indicates what sort our hypothesis we are doing. As we are doing two-sided hypothesis testing, this argument can be put to two.sided (the default). A full example with arbitrary values of using the binom.test function is the following: binom.test(300, 350, alternative = "two.sided")
+
+#' test the hypothesis that there is an equal number of american citizens voting for 
+#' Hillary Clinton and Bernie Sanders
+binom.test((0.6 * 350), 350, 0.5)
+
+#' State your conclusion in the variable conclusion. Assign it either the value of "rejected"
+#' or the value of "accepted"
+conclusion <- "rejected"
+
+# do a Wilcoxon signed-rank test
+wilcox.test(score_ipa, score_wheat, paired = TRUE, alternative = "greater")
+
+# assign your conclusion to the variable conclusion
+conclusion <- "rejected"
+conclusion1 <- "rejected "
+
+# do a Wilcoxon rank-sum test
+wilcox.test(beer_data$rating ~ beer_data$group, alternative = 'greater')
+
+# assign your conclusion to the variable conclusion
+conclusion <- "rejected"
+
+# do a Kruskal-Wallis test
+kruskal.test(rating ~ group, data = beer_data)
+
+# assign your conclusion to the variable conclusion
+conclusion <- "not"
+
+# calculate the spearman correlation between education level and rating of craft beer
+cor(beer_data$education_level, beer_data$consumption, method = "spearman")
+
+# calculate the correlation coefficient and test whether it is different from 0
+cor.test(beer_data$education_level, beer_data$consumption, method = "spearman")
+
+# is the null hypothesis accepted or rejected. Assign either value to the variable conclusion
+conclusion <- "rejected"
+
