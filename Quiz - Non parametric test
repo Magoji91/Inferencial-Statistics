@@ -1,0 +1,20 @@
+1. Which kind of tests are less versatile?
+Non-parametric
+
+2. A researcher is investigating how smart the dogs at a dog beauty pageant are alongside another variable. Which of the following variables could not be tested using parametric means and therefore requires a non-parametric test?
+The order of runners up.
+
+3. A teacher is interested in whether university students are more enthusiastic about learning after drinking one beer. To test this, they ask a sample of students how enthusiastic they are about learning before and after drinking a beer. Their enthusiasm levels are shown below:
+x<-c(2,3,2,4,3)
+y<-c(3,2,1,2,3)
+ct<-cbind(x,y)
+chifit<-chisq.test(ct)
+chifit
+(chifit$residuals)^2
+ct2<-ct[-4,]
+chisq.test(ct2)
+wilcox.test(x,y, exact=TRUE)
+rank.test(x,y)
+wilcox.test(y,x,conf.int=TRUE)
+rank.test(x,y,scores=nscores)
+rank.test(x,y,scores=nscores,conf.int=TRUE)
