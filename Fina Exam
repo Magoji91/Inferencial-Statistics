@@ -1,0 +1,108 @@
+1. Some students did not complete the procrastination questionnaire, but all completed the continuous IQ measure. If the researcher was interested in if there was a difference in IQ between those who did and did not complete the procrastination questionnaire, which test would the researcher use?
+
+Errado - Test for the difference between two independent proportions
+Errada - T-test for paired differences
+
+2. Which test would the researcher use to determine whether months until course completion was related to procrastination?
+
+Certa - Correlation/Bivariate regression
+
+3. If the researcher wanted to know whether student’s faculty was related to completion status, which test should they use?
+
+Certa - Chi-square test
+
+4. Suppose that the researcher wants to know if exam grades differ across student completion statuses (graduated, dropped out before first year, dropped out after first year). The researcher counts the exam grades as ordinal variables. Which test should they use?
+
+Certa - Kruskal-Wallis
+
+5. To predict study duration, the researcher performs a multiple regression test using procrastination and IQ scores as predictors. They also want to control for the student’s faculty ( Business and Economics, Law, Humanities, Social Sciences and Medicine). How many dummy variables will they need for the regression equation?
+
+Certa - 4
+
+6. If the researcher transform the IQ scores into the categories 'low' (84 and below), 'average' (85-115) and high (116 and higher), what is the measurement level of this transformed variable?
+
+Certa - Ordinal
+
+7. The researcher wants to know to whether they can predict whether or not students pass the first year based on procrastination, IQ and whether or not the student passed their first year exams. Which test should they use?
+
+Errada - Linear multiple regression
+Errada - Exponential regression
+
+8. The researcher wants to know if the number of credits earned after one year, is the same in the different faculties. A one-way analysis of variance is performed, which yields an F-value that is greater than the critical limit value.
+This means that
+
+Certa - At least one group mean is significantly different from the other.
+
+9. The researcher wants to know if months until course completion can be predicted with the variable “tendency to procrastinate”. Which of the following intervals is widest with a bivariate linear regression of Y on X?
+
+Certa - The prediction interval at a particular value of x.
+
+10. One wonders whether the pace of studying slows down after the first year. For the group that eventually graduates, the number of credits earned in the first year is compared with the number of credits earned in the second year. The table below shows the results.
+
+Errada - In the critical zone right, so H0 is rejected.
+Errada - Not in a critical area, so H0 is not rejected.
+
+11. A number of students were not eligible for financial assistance during their course, and were dependent on a bank loan. The bank charged an interest rate of 8 percent per year and students were not able to change this. The final debt of these students plotted against the time factor can best be analyzed using a
+
+Certa - Exponential regression
+
+
+12. The researcher wonders if procrastination - measured by the questionnaire - has predictive value in the study. Below are the averages and standard deviations for procrastination scores and course duration. The correlation between the two is 0.335 (n = 151, p = 0.000).
+
+Certa - 8.93
+
+13. In the group of students that graduated, the researcher looked at whether course duration different across faculties (Business and Economics, Medicine, Law, and other). They also looked at whether there an effect of gender, and an interaction effect. Below is the descriptive statistics, and part of the ANOVA table.
+
+Errada - Interaction between gender and faculty.
+Errada - Main effect of gender.
+
+14. The researcher wants to know if passing or not passing the first year is related to the student’s gender. Proportions of male and female students that passed and did not pass the first year are shown in the table below.
+
+Certa - (0.039, 0.223)
+
+15. To predict course duration a multiple regression test is conducted with the following predictors: procrastination, IQ, gender and scale scores for achievement motivation and failure anxiety. Results are shown in the table below.
+
+Certa - Procrastination, gender
+
+16. Suppose the researcher tested whether the average scale score for procrastination was the same for students who did and did not graduate, and the test statistic was not significant. The null hypothesis was therefore not rejected. Later, it turned out that there was conclusively an effect after all (different population averages of both groups). What can we conclude?
+
+Certa - Made a Type II error
+
+17. The number of students in the study from the Law faculty was relatively low. A few of the research questions with regards to this group did not yield significant results. However, the researchers were still not convinced that there were no differences in this population. n a follow-up study they want to increase the power.
+They can do this through (select all that apply)
+
+Errada - Examining groups that are less different from each other, so that the effect size becomes smaller.
+Errada - Increasing the level of significance.
+
+18. The researchers want to know if relatively more women graduate than men and created the table shown below.
+Correta - 2.88
+
+19. At the start of the study students completed a questionnaire measuring the personality traits of optimism and pessimism. The correlation between optimism and pessimism scores was -0.513, where p < 0.000.
+What is the correct interpretation of the value 0.00 in this situation?
+
+Correta - The correlation coefficient significantly differed from the value of 0 at a significance level of 0.05 with two-tailed test.
+
+20. See the test output below. What can we conclude about the regression model in which course duration is predicted by precrastination, failure anxiety, achievement motivation and gender?
+
+Errada - The F value is significant, therefore, the regression model indicates that the predictors are poor predictors of y.
+Errada - The average of y is a significantly better predictor than the regression model.
+
+21. From this question onwards, please round all values used in calculations to 5 decimal places.
+The researcher was interested if the mean course duration is different for students from specific faculties, namely Business and Economics, Law and Social Sciences. To investigate this, they used a one-way ANOVA. The table below shows the descriptive statistics.
+
+22. All the students begin their courses with an introductory course. The researcher wonders if the proportion of students who passed the introductory course is equal to the proportion who graduated. The table below shows the proportions.
+
+23. Course duration was predicted through a multiple regression test using procrastination, IQ, gender, achievement motivation and failure anxiety. See sum of squares output below.
+
+24. Course duration was compared across three faculty groups. The table below shows the mean rank for these groups (higher ranks mean longer course duration).
+
+25. A one-way variation analysis tested if mean scores on the Deadline Avoidance Scale were similar for the three course completion status groups (graduated, dropped out before the end of the first year, or dropped out after the first year). See the table below.
+
+26. The correlation between the procrastination questionnaire score and course duration is 0.375. What is the proportion of variance is explained by the variable ‘procrastination’ in a bivariate regression with course duration as the dependent variable?
+
+27. The researcher wonders if study success is associated with faculty (here, just Law and Social Sciences). These are all nominal variables. On the basis of the table below the researcher tests is whether the variables are associated.
+
+28. To test whether or not passing the first year depends on the student's procrastination score, a logistic regression analysis was conducted. The test also controlled for gender (female = 0, male = 1). See the results in the table below.
+
+29. The researcher wants to test whether mean procrastinating score (in a subset of students), is higher for those that graduated compared to those that did not graduate. Using a table, what is the upper limit of the probability threshold for the relevant test statistic (p <...)?
+
