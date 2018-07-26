@@ -1,82 +1,103 @@
 1. We conduct an investigation into the link between willingness to act with narcissism and age. We measure willingness to act either through a self-reported continuous measure, or a binary behavioural measure (whether or not a person will sign a petition). Narcissism and age are both continuous measures. If we want to predict willingness to act through behaviour using narcissism scores and age, which of the following is the most suitable technique is?
-Linear regression
+
+Correta - Logistic regression
 
 2. We want to compare self-reported willingness to act in sociology and political science students, and decide to use a non-parametric test. Which of the following is the most suitable test?
-McNemar
+
+Correta - Wilcoxon
 
 3. If we want to determine whether the proportion of men and women are equal in three education groups (high school / vocational school / university), which of the following is the most suitable test?
-Kruskal-Wallis test
+
+Correta - Chi-square test
 
 4. We want to test if political science students sign a petition (i.e. yes vs. no) more often than sociology students. Which of the following is the most suitable test?
-Z-test for two independent proportions
+Correta - Z-test for two independent proportions
 
 5. We compare self-reported willingness to act between sociology and political science students. It is an advantage if we can assume that the standard deviations of the population are the same, because the degrees of freedom value is:
-Smaller, and hence the test is more easily significant
+
+Correta - Larger, and hence the test is more easily significant
 
 6. Suppose we do not find a significant difference in self-reported willingness to take action between two experimental conditions. The power of the test can be increased next time through
-Using a smaller α level
+
+Correta - Using a larger sample
 
 7. We looked at how willing people were to sign a petition when it was framed in a positive, negative or neutral tone. Experts believe that the positive and negative petitions were formulated in a far more extreme way than normal. If the petitions were formulated in a less extreme way in a follow-up study, which of the following would likely happen to the statistical power?
-Remain the same
+
+Correta - Decrease
 
 8. Suppose that we find a significant effect of positive and negative framing on willingness to take action, where the positive condition is linked to a significantly higher willingness to take action than the negative and neutral conditions. Later this study is repeated ten times in similar circumstances and each time no significant effect is found. Our finding was probably a:
-TYPE II ERROR
+
+Correta - Type I error
 
 9. When a parametric test is used to see whether the three types of petition framing have a different effect on self-reported willingness to take action, then self-reported willingness to take action must be:
-Categorical
+
+Correta - Quantitative
 
 10. We compare self-reported willingness to act in students of sociology and political science with a t-test, and expect political science students to be more willing to act. Suppose that the two groups are small and divided very unevenly, both containing a number of extreme values. Which of the following tests is best if we conduct a t-test?
-Two-sided
+Correta - Two-sided
 
 11. We try to predict self-reported willingness to act using narcissism scores. The R2 is very low so we decide to add a predictor. We want to choose gender or age. Suppose gender is strongly linked with narcissism and moderately with willingness to act. Age correlates weakly with narcissism and moderately with willingness to act. Which of the following is most likely to be the best predictor?
-Gender
+
+Correta - Age
 
 12. When students in the three petition-framing conditions do not significantly differ in self-reported willingness to act, which of the following test statistic values do we expect?
-approximately equal to 1
+Correta - approximately equal to 1
 
 13. The table below gives the mean and standard deviation for narcissism and willingness to act. The correlation between willingness to act and narcissism is 0.097. We try to predict self-reported willingness to act using narcissism scores. Which of the following is the value of the regression coefficient for narcissism?
-0.092
+
+Correta - 0.098
 
 14. We try to predict self-reported willingness to act using narcissism scores and study subject (political science / sociology)
 Based on the table below, which of the following values is the explained variance?
-0.324
+Correta - 0.025
 
 15. We try to predict self-reported willingness to act using narcissism scores and study subject (political science / sociology). The table of parameter estimates and their standard errors is provided below.
-Narcissism
+
+Correta - Study subject and narcissism
 
 16. We try to predict self-reported willingness to act using age and gender. See the table containing the sum of squares values below.
-Significant
+
+Correta - Not significant
 
 17. The effect size of the difference in willingness to act between the positive and neutral framing condition is 0.13. This effect size is
-Moderate
+
+Correta - Small
 
 18. See the table below to find out whether men and women are spread equally over the framing conditions.
-5.072
+Certa - 5.072
 
 19. The following tables comes from testing whether self-reported willingness to take action differs across the three education groups (high school / vocational school / university).
-Not significant with a p-value of 0.115
+Not significant with a p-value of 0.467
 
 20. The regression output below shows whether signing or not-signing the petition is predicted by narcissism, age, gender and study subject.
-Sensitivity is low and none of the predictors are significant
+Certa - Sensitivity is low and none of the predictors are significant
 
 21. From this question onwards, please round all values used in calculations to 5 decimal places.
 The table below shows the average willingness to take action in three framing conditions in a subset of a whole sample. Enter the value of the test statistic that tells us whether these group means differ significantly.
+1-way, equal groups : F = (35 * ((34.543 - 33.714)^2 + (32.686 - 33.714)^2 +(33.914 - 33.714)^2)/(3 - 1))/((5.792^2 + 5.034^2 + 5.136^2)/3)= 1.098
 
 22. We investigate the effect of the framing condition, study subject (political science / sociology) and the interaction between framing condition and study subject on self-reported willingness to act. We do this using a two-way analysis of variance. Based on the table below, report the test statistic for establishing whether the effect of framing on willingness to act is different for sociology students versus political students.
+(11.452/2)/(11819.275/475)= 0.2301199
 
 23. Below you see how many men and women studied sociology and political science.
+z-test for two proportions, p-value for 1-sided test: (0.54153-0.58889)/sqrt(.55925*(1-.55925)*(1/301+1/180)) = -1.01 -> p = 0.1562
 
 24. The table below shows coefficient estimates for self-reported willingness to act predicted on the basis of study subject (political science = 0, sociology = 1) and narcissism.
+y* = 30.00369525 + 1.30363441*0 + 0.09590041*36 = 33.456
 
 25. Below you see the mean narcissism score for individuals studying both political sciences and sociology.
+t-test, equal variances: t = (35.667-35.505)/round(sqrt((5.021^2)/301+(4.948^2)/180),5)=0.346
 
 26. A very large-scale Dutch study of more than ten thousand participants examined what proportion of people were willing to sign a neutrally-framed petition on the empowerment of citizens in local governance. This proportion was 0.217 and represents the population value due to the large sample size. We want to know whether the proportion of students in our investigation who signed the petition in the neutral condition (51 out of 160 students) significantly differed from the proportion in the national survey. Test this hypothesis and give the test statistic.
+z- test, 1 proportion: (.31875-0.217)/sqrt((0.217*(1-0.217))/160) = 3.122365
 
 27. We approach our student sample again a year later and offer them the same petition to sign. We record whether or not they sign the petition. See the results below.
+McNemar test: (126 - 106)/sqrt(126 + 106) = 1.313064
 
 28. We used a t-test to examine whether average self-reported willingness to act differs significantly between sociology and political science students. The resulting value is t(479) = 2.790.
 Using a table, find the upper limit of the probability of obtaining this test statistic with a two-sided test (p ≤ ...).
 Report this value to to 4 decimal places.
+t-statistic, table lookup -> 0.005*2 = 0.01
 
 29. Willingness to act is compared across the three framing conditions, but this time using a non-parametric test. The average grade is equal to (481 + 1) / 2 = 241
-
+Kruskall-Wallis test: (12/(481*482))*(160*(240.05-241)^2 + 161*(265.92-241)^2 + 160*(216.94-241)^2) =9.977
