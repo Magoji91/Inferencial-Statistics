@@ -27,11 +27,27 @@ You decide to check this with a Wilcoxon signed rank test. What is the test stat
 x <- c(1, 2, 3, 4)
 y <- c(3.5, 4.2, 2.3, 3, 1)
 
+ t.test(a, b, paired=TRUE, alternative="greater")
+
+wilcox.test(x, y, alternative = "g")        # greater
+wilcox.test(x, y, alternative = "greater",
+            exact = FALSE, correct = FALSE) # H&W large sample
+                                            # approximation
+
+wilcox.test(rnorm(10), rnorm(10, 2), conf.int = TRUE)
+
+
 5. Based on your tests statistic, what can we say about Wayne East’s new album?
 
 Correta - The median rating is not significantly different from 2.
 
 6. You’re still not convinced of your findings about Wayne East’s album, so you decide to do an experiment on how happy people are after listening to Wayne’s new album, and compare this to a group that listen to a lecture on Astrophysics. The table below shows the enjoyment levels in both groups.
+a <- c(2.5,7.4,7.2,6.5)
+b <- c(8.0,5.5,3.2,6.2)
+
+sum.rank.a = sum(rank(c(a,b))[1:4])
+sum.rank.b = sum(rank(c(a,b))[5:8]
+
 
 7. Based on the table in the previous question, what is the sum of the ranks in the Astrophysics group?
 
@@ -60,8 +76,14 @@ CORRETA - There is a weak positive relationship between study hours and grades.
 
 14. The “Beautiful Pets” fashion show opens with the cat and dog parade, where cats and dogs appear on stage one after the other to showcase their outfits.
 This year the cats and dogs appear in the following order:
-C, D, C, D, D, C, C, C, C, D, D, C, D
-Where ‘C’ represents a cat, and ‘D’ represents a dog. How many runs were there in this sequence?
+
+queue <- factor(c("c", "d", "c", "d", "d", "c", "c", "c", "c", "d", "d", "c", "d"))
+library(tseries)
+runs.test(queue, alternative="greater")
+Nj    <- table(queue)
+(runs <- rle(levels(queue)[as.numeric(queue)]))
+(rr <- length(runs$lengths))
+8
 
 15.Can we reject the null hypothesis that the order of animals at the cat and dog parade was random?
 Correta -  NO
