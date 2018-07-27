@@ -89,6 +89,8 @@ Errada - The average of y is a significantly better predictor than the regressio
 
 21. From this question onwards, please round all values used in calculations to 5 decimal places.
 The researcher was interested if the mean course duration is different for students from specific faculties, namely Business and Economics, Law and Social Sciences. To investigate this, they used a one-way ANOVA. The table below shows the descriptive statistics.
+F	8,592262523
+
 
 22. All the students begin their courses with an introductory course. The researcher wonders if the proportion of students who passed the introductory course is equal to the proportion who graduated. The table below shows the proportions.
 
