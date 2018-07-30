@@ -89,25 +89,22 @@ Errada - The average of y is a significantly better predictor than the regressio
 
 21. From this question onwards, please round all values used in calculations to 5 decimal places.
 The researcher was interested if the mean course duration is different for students from specific faculties, namely Business and Economics, Law and Social Sciences. To investigate this, they used a one-way ANOVA. The table below shows the descriptive statistics.
-F	8.592262523
-
+F	8.5923
 
 22. All the students begin their courses with an introductory course. The researcher wonders if the proportion of students who passed the introductory course is equal to the proportion who graduated. The table below shows the proportions.
-1.411773158
-
+1.4118
 
 23. Course duration was predicted through a multiple regression test using procrastination, IQ, gender, achievement motivation and failure anxiety. See sum of squares output below.
-4.618330215
-
+4.6183
 
 24. Course duration was compared across three faculty groups. The table below shows the mean rank for these groups (higher ranks mean longer course duration).
-15.7332813
+15.7333
 
 25. A one-way variation analysis tested if mean scores on the Deadline Avoidance Scale were similar for the three course completion status groups (graduated, dropped out before the end of the first year, or dropped out after the first year). See the table below.
-2.90215201
+2.9022
 
 26. The correlation between the procrastination questionnaire score and course duration is 0.375. What is the proportion of variance is explained by the variable ‘procrastination’ in a bivariate regression with course duration as the dependent variable?
-0.612372436
+0.6124
 
 27. The researcher wonders if study success is associated with faculty (here, just Law and Social Sciences). These are all nominal variables. On the basis of the table below the researcher tests is whether the variables are associated.
 6.5709
@@ -115,4 +112,18 @@ F	8.592262523
 28. To test whether or not passing the first year depends on the student's procrastination score, a logistic regression analysis was conducted. The test also controlled for gender (female = 0, male = 1). See the results in the table below.
 
 29. The researcher wants to test whether mean procrastinating score (in a subset of students), is higher for those that graduated compared to those that did not graduate. Using a table, what is the upper limit of the probability threshold for the relevant test statistic (p <...)?
+sd(x)/sqrt(length(x))
+
+M1<-18.1
+M2<-22
+S1<-4.31
+S2<-5.37
+X<-M2-M1
+SED<-sqrt(s1^2/10+s2^2/10)
+N1+N2-2=18
+DF=18
+TVALUE<-2.101
+MGE<-TVALUE*SED
+LOWER<-X-MGE
+UPPER<-X+MGE
 
