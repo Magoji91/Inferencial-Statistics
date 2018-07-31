@@ -114,20 +114,14 @@ F	8.5923
 29. The researcher wants to test whether mean procrastinating score (in a subset of students), is higher for those that graduated compared to those that did not graduate. Using a table, what is the upper limit of the probability threshold for the relevant test statistic (p <...)?
 sd(x)/sqrt(length(x))
 
-M1<-18.1
-M2<-22
-S1<-4.31
-S2<-5.37
-X<-M2-M1
-SED<-sqrt(S1^2/10+S2^2/10)
-N1<-10
-N2<-10
-DF<-N1+N2-2
-DF<-18
-TV<-2.101
-MGE<-TVALUE*SED
-LOWER<-X-MGE
-UPPER<-X+MGE
+N1<-12
+N2<-13
+SDE1<-0.43651
+SDE2<-0.35142
+SDED<-sqrt(SDE1^2+SDE2^2)
+DIF<-N1-N2
+DIF+2*SDED
+0.1207801
 
 M1<-6.1078
 M2<-5.1313
@@ -138,11 +132,11 @@ SED<-sqrt(S1^2/10+S2^2/10)
 N1<-12
 N2<-13
 DF<-N1+N2-2
-DF<-18
-TV<-2.101
+DF
+TV<-2.069
 MGE<-TV*SED
 LOWER<-X-MGE
 UPPER<-X+MGE
 LOWER
 UPPER
-0.334224
+0.3142606
