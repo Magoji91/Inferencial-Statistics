@@ -1,7 +1,6 @@
 1. Some students did not complete the procrastination questionnaire, but all completed the continuous IQ measure. If the researcher was interested in if there was a difference in IQ between those who did and did not complete the procrastination questionnaire, which test would the researcher use?
 
-Errado - Test for the difference between two independent proportions
-Errada - T-test for paired differences
+T-test for two independent groups
 
 2. Which test would the researcher use to determine whether months until course completion was related to procrastination?
 
@@ -25,8 +24,7 @@ Certa - Ordinal
 
 7. The researcher wants to know to whether they can predict whether or not students pass the first year based on procrastination, IQ and whether or not the student passed their first year exams. Which test should they use?
 
-Errada - Linear multiple regression
-Errada - Exponential regression
+Logistic regression
 
 8. The researcher wants to know if the number of credits earned after one year, is the same in the different faculties. A one-way analysis of variance is performed, which yields an F-value that is greater than the critical limit value.
 This means that
@@ -39,8 +37,7 @@ Certa - The prediction interval at a particular value of x.
 
 10. One wonders whether the pace of studying slows down after the first year. For the group that eventually graduates, the number of credits earned in the first year is compared with the number of credits earned in the second year. The table below shows the results.
 
-Errada - In the critical zone right, so H0 is rejected.
-Errada - Not in a critical area, so H0 is not rejected.
+In the left critical zone, so H0 is rejected.
 
 11. A number of students were not eligible for financial assistance during their course, and were dependent on a bank loan. The bank charged an interest rate of 8 percent per year and students were not able to change this. The final debt of these students plotted against the time factor can best be analyzed using a
 
@@ -53,8 +50,7 @@ Certa - 8.93
 
 13. In the group of students that graduated, the researcher looked at whether course duration different across faculties (Business and Economics, Medicine, Law, and other). They also looked at whether there an effect of gender, and an interaction effect. Below is the descriptive statistics, and part of the ANOVA table.
 
-Errada - Interaction between gender and faculty.
-Errada - Main effect of gender.
+Main effect of faculty.
 
 14. The researcher wants to know if passing or not passing the first year is related to the student’s gender. Proportions of male and female students that passed and did not pass the first year are shown in the table below.
 
@@ -71,8 +67,8 @@ Certa - Made a Type II error
 17. The number of students in the study from the Law faculty was relatively low. A few of the research questions with regards to this group did not yield significant results. However, the researchers were still not convinced that there were no differences in this population. n a follow-up study they want to increase the power.
 They can do this through (select all that apply)
 
-Errada - Examining groups that are less different from each other, so that the effect size becomes smaller.
-Errada - Increasing the level of significance.
+Taking a larger sample.
+Increasing the level of significance.
 
 18. The researchers want to know if relatively more women graduate than men and created the table shown below.
 Correta - 2.88
@@ -84,35 +80,34 @@ Correta - The correlation coefficient significantly differed from the value of 0
 
 20. See the test output below. What can we conclude about the regression model in which course duration is predicted by precrastination, failure anxiety, achievement motivation and gender?
 
-Errada - The F value is significant, therefore, the regression model indicates that the predictors are poor predictors of y.
-Errada - The average of y is a significantly better predictor than the regression model.
+The regression model is significantly better than the model that only uses the average of y.
 
 21. From this question onwards, please round all values used in calculations to 5 decimal places.
 The researcher was interested if the mean course duration is different for students from specific faculties, namely Business and Economics, Law and Social Sciences. To investigate this, they used a one-way ANOVA. The table below shows the descriptive statistics.
-F	8.5923
+Correta - F	8.5923
 
 22. All the students begin their courses with an introductory course. The researcher wonders if the proportion of students who passed the introductory course is equal to the proportion who graduated. The table below shows the proportions.
 1.4118
 
-0.079
+Errada 0.079
 
 23. Course duration was predicted through a multiple regression test using procrastination, IQ, gender, achievement motivation and failure anxiety. See sum of squares output below.
-4.6183
+Errada - 4.6183
 
 24. Course duration was compared across three faculty groups. The table below shows the mean rank for these groups (higher ranks mean longer course duration).
-15.7333
+Certa - 15.7333
 
 25. A one-way variation analysis tested if mean scores on the Deadline Avoidance Scale were similar for the three course completion status groups (graduated, dropped out before the end of the first year, or dropped out after the first year). See the table below.
-2.9022
+Certa - 2.9022
 
 26. The correlation between the procrastination questionnaire score and course duration is 0.375. What is the proportion of variance is explained by the variable ‘procrastination’ in a bivariate regression with course duration as the dependent variable?
-0.6124
+Errada - 0.6124
 
 27. The researcher wonders if study success is associated with faculty (here, just Law and Social Sciences). These are all nominal variables. On the basis of the table below the researcher tests is whether the variables are associated.
-6.5709
+Certa - 6.5709
 
 28. To test whether or not passing the first year depends on the student's procrastination score, a logistic regression analysis was conducted. The test also controlled for gender (female = 0, male = 1). See the results in the table below.
-0.925387993
+Errada - 0.925387993
 
 29. The researcher wants to test whether mean procrastinating score (in a subset of students), is higher for those that graduated compared to those that did not graduate. Using a table, what is the upper limit of the probability threshold for the relevant test statistic (p <...)?
 sd(x)/sqrt(length(x))
@@ -142,4 +137,4 @@ LOWER<-X-MGE
 UPPER<-X+MGE
 LOWER
 UPPER
-0.3142606
+Errada - 0.3142606
